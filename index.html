@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TikTok Downloader</title>
+<link rel="stylesheet" href="style.css" >
+</head>
+<body>
+
+<div class="app">
+  <h2>TikTok Downloader</h2>
+  <p>No Watermark</p>
+
+  <input type="text" id="tiktokUrl" placeholder="Tempel link TikTok...">
+
+  <div class="mode">
+    <button id="btnVideo" class="active" onclick="setMode('video')">Video</button>
+    <button id="btnPhoto" onclick="setMode('photo')">Foto Slide</button>
+  </div>
+
+  <button class="main-btn" onclick="downloadTT()">Download</button>
+
+  <div id="loading" class="loading hidden"></div>
+  <div id="result"></div>
+</div>
+
+<div class="watermark">© Toni – TikTok Downloader</div>
+
+<script src="script.js"></script>
+</body>
+</html>
